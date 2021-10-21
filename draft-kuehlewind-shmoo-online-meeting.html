@@ -12,11 +12,11 @@
 the number, length, and composition of sessions on the meeting agenda. These guidelines are based
 on the experience after the COVID-19 pandemic in 2020. 
     " name="description">
-<meta content="xml2rfc 3.9.1" name="generator">
+<meta content="xml2rfc 3.10.0" name="generator">
 <meta content="Internet-Draft" name="keyword">
 <meta content="draft-kuehlewind-shmoo-online-meeting-latest" name="ietf.draft">
 <!-- Generator version information:
-  xml2rfc 3.9.1
+  xml2rfc 3.10.0
     Python 3.9.5
     appdirs 1.4.4
     ConfigArgParse 1.3
@@ -240,22 +240,22 @@ body {
 }
 
 /* headings */
-#title, h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Cabin Condensed", sans-serif;
   font-weight: 600;
   margin: 0.8em 0 0.3em;
   font-size-adjust: 0.5;
   color: var(--title-color);
 }
-#title {
+h1#title {
   font-size: 32px;
   line-height: 40px;
   clear: both;
 }
-#title, #rfcnum {
+h1#title, h1#rfcnum {
   margin: 1.5em 0 0.2em;
 }
-#rfcnum + #title {
+h1#rfcnum + h1#title {
   margin: 0.2em 0;
 }
 
@@ -272,10 +272,15 @@ h4, h5, h6 {
 .author {
   padding-bottom: 0.3em;
 }
-#abstract+p, #abstract+p code, #abstract+p samp, #abstract+p tt {
+#abstract+p {
   font-size: 18px;
   line-height: 24px;
 }
+#abstract+p code, #abstract+p samp, #abstract+p tt {
+  font-size: 16px;
+  line-height: 0;
+}
+
 p {
   padding: 0;
   margin: 0.5em 0;
@@ -408,6 +413,12 @@ tt, code, pre {
   background-color: var(--highlight-color);
   font: 14px/22px 'Oxygen Mono', monospace;
 }
+tt, code {
+  /* changing the font for inline elements leads to different ascender
+     and descender heights; as we want to retain baseline alignment,
+     remove leading to avoid altering the final height of lines */
+  line-height: 0;
+}
 pre {
   border: 1px solid var(--line-color);
   font-size: 13.5px;
@@ -456,9 +467,6 @@ aside, blockquote {
   font-style: italic;
 }
 blockquote {
-  background-color: var(--highlight-color);
-  border: 1px solid var(--line-color);
-  border-radius: 3px;
   margin: 1em 0;
 }
 cite {
@@ -1009,11 +1017,11 @@ address div.right {
 <thead><tr>
 <td class="left">Internet-Draft</td>
 <td class="center">Organization Online Meetings</td>
-<td class="right">August 2021</td>
+<td class="right">October 2021</td>
 </tr></thead>
 <tfoot><tr>
 <td class="left">Kuehlewind &amp; Duke</td>
-<td class="center">Expires 18 February 2022</td>
+<td class="center">Expires 24 April 2022</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1026,12 +1034,12 @@ address div.right {
 <dd class="internet-draft">draft-kuehlewind-shmoo-online-meeting-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2021-08-17" class="published">17 August 2021</time>
+<time datetime="2021-10-21" class="published">21 October 2021</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Informational</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2022-02-18">18 February 2022</time></dd>
+<dd class="expires"><time datetime="2022-04-24">24 April 2022</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -1082,7 +1090,7 @@ on the experience after the COVID-19 pandemic in 2020.<a href="#section-abstract
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 18 February 2022.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 24 April 2022.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1110,51 +1118,51 @@ on the experience after the COVID-19 pandemic in 2020.<a href="#section-abstract
         <a href="#" onclick="scroll(0,0)" class="toplink">▲</a><h2 id="name-table-of-contents">
 <a href="#name-table-of-contents" class="section-name selfRef">Table of Contents</a>
         </h2>
-<nav class="toc"><ul class="toc compact ulEmpty ulBare">
-<li class="toc compact ulEmpty ulBare" id="section-toc.1-1.1">
+<nav class="toc"><ul class="compact toc ulBare ulEmpty">
+<li class="compact toc ulBare ulEmpty" id="section-toc.1-1.1">
             <p id="section-toc.1-1.1.1" class="keepWithNext"><a href="#section-1" class="xref">1</a>.  <a href="#name-introduction" class="xref">Introduction</a></p>
 </li>
-          <li class="toc compact ulEmpty ulBare" id="section-toc.1-1.2">
+          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.2">
             <p id="section-toc.1-1.2.1" class="keepWithNext"><a href="#section-2" class="xref">2</a>.  <a href="#name-some-history" class="xref">Some History</a></p>
 </li>
-          <li class="toc compact ulEmpty ulBare" id="section-toc.1-1.3">
+          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3">
             <p id="section-toc.1-1.3.1"><a href="#section-3" class="xref">3</a>.  <a href="#name-guidelines-for-online-meeti" class="xref">Guidelines for Online Meeting Planning</a></p>
-<ul class="compact ulBare ulEmpty toc">
-<li class="compact ulBare ulEmpty toc" id="section-toc.1-1.3.2.1">
+<ul class="compact toc ulBare ulEmpty">
+<li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.1">
                 <p id="section-toc.1-1.3.2.1.1"><a href="#section-3.1" class="xref">3.1</a>.  <a href="#name-time-zone-selection" class="xref">Time Zone Selection</a></p>
-<ul class="compact ulBare ulEmpty toc">
-<li class="compact ulBare ulEmpty toc" id="section-toc.1-1.3.2.1.2.1">
+<ul class="compact toc ulBare ulEmpty">
+<li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.1.2.1">
                     <p id="section-toc.1-1.3.2.1.2.1.1" class="keepWithNext"><a href="#section-3.1.1" class="xref">3.1.1</a>.  <a href="#name-rules-for-selection" class="xref">Rules for selection</a></p>
 </li>
                 </ul>
 </li>
-              <li class="compact ulBare ulEmpty toc" id="section-toc.1-1.3.2.2">
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.2">
                 <p id="section-toc.1-1.3.2.2.1"><a href="#section-3.2" class="xref">3.2</a>.  <a href="#name-number-of-days-and-total-ho" class="xref">Number of Days and Total Hours per Day</a></p>
 </li>
-              <li class="compact ulBare ulEmpty toc" id="section-toc.1-1.3.2.3">
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.3">
                 <p id="section-toc.1-1.3.2.3.1"><a href="#section-3.3" class="xref">3.3</a>.  <a href="#name-session-break-length" class="xref">Session/Break Length</a></p>
 </li>
-              <li class="compact ulBare ulEmpty toc" id="section-toc.1-1.3.2.4">
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.4">
                 <p id="section-toc.1-1.3.2.4.1"><a href="#section-3.4" class="xref">3.4</a>.  <a href="#name-number-of-parallel-tracks" class="xref">Number of Parallel Tracks</a></p>
 </li>
-              <li class="compact ulBare ulEmpty toc" id="section-toc.1-1.3.2.5">
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.5">
                 <p id="section-toc.1-1.3.2.5.1"><a href="#section-3.5" class="xref">3.5</a>.  <a href="#name-full-vs-limited-agenda" class="xref">Full vs. limited agenda</a></p>
 </li>
             </ul>
 </li>
-          <li class="toc compact ulEmpty ulBare" id="section-toc.1-1.4">
+          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4">
             <p id="section-toc.1-1.4.1"><a href="#section-4" class="xref">4</a>.  <a href="#name-experiments" class="xref">Experiments</a></p>
 </li>
-          <li class="toc compact ulEmpty ulBare" id="section-toc.1-1.5">
+          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.5">
             <p id="section-toc.1-1.5.1"><a href="#section-5" class="xref">5</a>.  <a href="#name-chances-and-lessons-learnt" class="xref">Chances and Lessons Learnt</a></p>
 </li>
-          <li class="toc compact ulEmpty ulBare" id="section-toc.1-1.6">
+          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.6">
             <p id="section-toc.1-1.6.1"><a href="#section-6" class="xref">6</a>.  <a href="#name-acknowledgments" class="xref">Acknowledgments</a></p>
 </li>
-          <li class="toc compact ulEmpty ulBare" id="section-toc.1-1.7">
+          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.7">
             <p id="section-toc.1-1.7.1"><a href="#section-7" class="xref">7</a>.  <a href="#name-normative-references" class="xref">Normative References</a></p>
 </li>
-          <li class="toc compact ulEmpty ulBare" id="section-toc.1-1.8">
+          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.8">
             <p id="section-toc.1-1.8.1"><a href="#appendix-A" class="xref"></a><a href="#name-authors-addresses" class="xref">Authors' Addresses</a></p>
 </li>
         </ul>
@@ -1220,35 +1228,113 @@ following this 1-1-1 rule to share the pain has/seems to have rough consensus.<a
         <h3 id="name-time-zone-selection">
 <a href="#section-3.1" class="section-number selfRef">3.1. </a><a href="#name-time-zone-selection" class="section-name selfRef">Time Zone Selection</a>
         </h3>
-<p id="section-3.1-1">All fully online IETF plenary meetings begin at 0500 ("Asia"), 1200 ("Europe"), or 2100 ("North America") UTC. The names
-are not meant to imply that all participants in a given region will find the times convenient given their personal
-schedules, but are useful for the selection rules below. These location names are consistent with the venue
-selection criteria in <span>[<a href="#RFC8719" class="xref">RFC8719</a>]</span>.<a href="#section-3.1-1" class="pilcrow">¶</a></p>
-<p id="section-3.1-2">The selected slots have been proposed to minimize inconvenience while not excessively penalizing any time zone.
-Effectively, there is an early morning and a late afternoon meeting for two of the three regions in
-each slot. E.g. the "Asia" 0500 UTC slot would be 0600 CET (early morning) and 1300 China Standard Time (afternoon). Since fully
-online meeting days are expected to be shorter then in-person meetings, this slot is roughly within the "usual" working hours
-of both regions.<a href="#section-3.1-2" class="pilcrow">¶</a></p>
-<p id="section-3.1-3">The intent of rotating between these three slots is to scatter meetings throughout the course of the global day, to maximize the ease
-of participants to occasionally attend regardless of their location and what time of day is optimal for their schedule.<a href="#section-3.1-3" class="pilcrow">¶</a></p>
+<p id="section-3.1-1">This time selection enables to have 2 out of 3 fully online IETF plenary meetings 
+during the day from most participants. Basically every full online meeting is for two regions 
+of the three regions described in <span>[<a href="#RFC8179" class="xref">RFC8179</a>]</span>, roughly speaking, after sunrise or after dinner.
+This has the tradeoff that it maps the third region in middle of night. However, that also means
+for most participants only one remote meeting per year might
+require a significant change to sleep schedules.<a href="#section-3.1-1" class="pilcrow">¶</a></p>
+<p id="section-3.1-2">The times are also seasonally adjusted to leverage differentials in Daylight
+Savings Time. These time slots are as follows, in UTC:<a href="#section-3.1-2" class="pilcrow">¶</a></p>
+<table class="center" id="table-1">
+          <caption><a href="#table-1" class="selfRef">Table 1</a></caption>
+<thead>
+            <tr>
+              <th class="text-left" rowspan="1" colspan="1">Name</th>
+              <th class="text-left" rowspan="1" colspan="1">Times (Northern Summer)</th>
+              <th class="text-left" rowspan="1" colspan="1">Times (Northern Winter)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-left" rowspan="1" colspan="1">North America Night</td>
+              <td class="text-left" rowspan="1" colspan="1">0500-1100 UTC</td>
+              <td class="text-left" rowspan="1" colspan="1">0600-1200 UTC</td>
+            </tr>
+            <tr>
+              <td class="text-left" rowspan="1" colspan="1">Asia Night</td>
+              <td class="text-left" rowspan="1" colspan="1">1400-2000 UTC</td>
+              <td class="text-left" rowspan="1" colspan="1">1500-2100 UTC</td>
+            </tr>
+            <tr>
+              <td class="text-left" rowspan="1" colspan="1">Europe Night</td>
+              <td class="text-left" rowspan="1" colspan="1">2200-0400 UTC</td>
+              <td class="text-left" rowspan="1" colspan="1">2200-0400 UTC</td>
+            </tr>
+          </tbody>
+        </table>
+<p id="section-3.1-4">The intent of rotating between these three slots is to scatter meetings
+throughout the course of the global day, to maximize the ease of participants
+to occasionally attend regardless of their location and what time of day is
+optimal for their schedule.<a href="#section-3.1-4" class="pilcrow">¶</a></p>
 <div id="rules-for-selection">
 <section id="section-3.1.1">
           <h4 id="name-rules-for-selection">
 <a href="#section-3.1.1" class="section-number selfRef">3.1.1. </a><a href="#name-rules-for-selection" class="section-name selfRef">Rules for selection</a>
           </h4>
-<p id="section-3.1.1-1">The IETF will select a start time from these three choices according the following rules, applied in order.<a href="#section-3.1.1-1" class="pilcrow">¶</a></p>
-<ol start="1" type="1" class="normal type-1" id="section-3.1.1-2">
-<li id="section-3.1.1-2.1">Eliminate all regions that had an in-person meeting in that calendar year. If one region remains, select the time
-slot mapped to that region.<a href="#section-3.1.1-2.1" class="pilcrow">¶</a>
-</li>
-            <li id="section-3.1.1-2.2">Eliminate all regions that have a planned in-person meeting that calendar year. If one region remains, select the
-time slot mapped to that region.<a href="#section-3.1.1-2.2" class="pilcrow">¶</a>
-</li>
-            <li id="section-3.1.1-2.3">Select the region that has least recently had an fully online IETF plenary in its slot. For the pandemic cancellations
-of 2020- 2021, the original host cities are used to determine the host region. Therefore, at the time of writing the
-most recent selections are Asia in November 2020, Europe in March 2021, and North America in July 2021.<a href="#section-3.1.1-2.3" class="pilcrow">¶</a>
-</li>
-          </ol>
+<p id="section-3.1.1-1">The IETF will select a start time from these three choices based on the past
+three meetings. The following table covers all permutations of previous
+meetings held in-person in Region A, B, or C; or remotely in the nights of
+one of those regions.<a href="#section-3.1.1-1" class="pilcrow">¶</a></p>
+<table class="center" id="table-2">
+            <caption><a href="#table-2" class="selfRef">Table 2</a></caption>
+<thead>
+              <tr>
+                <th class="text-left" rowspan="1" colspan="1">3 meetings ago</th>
+                <th class="text-left" rowspan="1" colspan="1">2 meetings ago</th>
+                <th class="text-left" rowspan="1" colspan="1">Last Meeting</th>
+                <th class="text-left" rowspan="1" colspan="1">Online Selection</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-left" rowspan="1" colspan="1">Any</td>
+                <td class="text-left" rowspan="1" colspan="1">Any</td>
+                <td class="text-left" rowspan="1" colspan="1">In-Person A</td>
+                <td class="text-left" rowspan="1" colspan="1">A Night</td>
+              </tr>
+              <tr>
+                <td class="text-left" rowspan="1" colspan="1">Any</td>
+                <td class="text-left" rowspan="1" colspan="1">Online A Night</td>
+                <td class="text-left" rowspan="1" colspan="1">Online B Night</td>
+                <td class="text-left" rowspan="1" colspan="1">C Night</td>
+              </tr>
+              <tr>
+                <td class="text-left" rowspan="1" colspan="1">Online A Night</td>
+                <td class="text-left" rowspan="1" colspan="1">In-Person B</td>
+                <td class="text-left" rowspan="1" colspan="1">Online B Night</td>
+                <td class="text-left" rowspan="1" colspan="1">C Night</td>
+              </tr>
+              <tr>
+                <td class="text-left" rowspan="1" colspan="1">In-Person A</td>
+                <td class="text-left" rowspan="1" colspan="1">In-Person B</td>
+                <td class="text-left" rowspan="1" colspan="1">Online B Night</td>
+                <td class="text-left" rowspan="1" colspan="1">A Night</td>
+              </tr>
+              <tr>
+                <td class="text-left" rowspan="1" colspan="1">In-Person A</td>
+                <td class="text-left" rowspan="1" colspan="1">In-Person A</td>
+                <td class="text-left" rowspan="1" colspan="1">Online A Night</td>
+                <td class="text-left" rowspan="1" colspan="1">see below</td>
+              </tr>
+              <tr>
+                <td class="text-left" rowspan="1" colspan="1">Online A Night</td>
+                <td class="text-left" rowspan="1" colspan="1">Online B Night</td>
+                <td class="text-left" rowspan="1" colspan="1">Online C Night</td>
+                <td class="text-left" rowspan="1" colspan="1">A Night</td>
+              </tr>
+            </tbody>
+          </table>
+<p id="section-3.1.1-3">Basically this table follows two rules:
+1) When ever a fully online meeting follows and in-person meeting, the online meeting time is used that disadvantages most the participants of the time zone where the in-person meeting was held.
+2) If multiple fully online meetings follow each other, the time zone selection should be rotated based on the most recent time zones that the in-person meetings were held in.<a href="#section-3.1.1-3" class="pilcrow">¶</a></p>
+<p id="section-3.1.1-4">The final case occurs in the rare event that back-to-back in-person plenaries
+occur in the same region. In this case, find the most recent meeting that was
+neither in 'A' (if in person) nor in 'A' night (if remote). If this meeting
+was in-person in region 'B', then the next meeting will be in 'B' Night. If it
+was remote in 'B' Night, the next meeting will be in 'C' Night.<a href="#section-3.1.1-4" class="pilcrow">¶</a></p>
+<p id="section-3.1.1-5">To initialize this algorithm, IETF 112 is considered as an 'Asia Night'
+remote meeting, and IETF 111 is a 'Europe Night' remote meeting.<a href="#section-3.1.1-5" class="pilcrow">¶</a></p>
 </section>
 </div>
 </section>
@@ -1367,6 +1453,10 @@ should be consider for the organization of future online-only meetings in replac
 <a href="#section-7" class="section-number selfRef">7. </a><a href="#name-normative-references" class="section-name selfRef">Normative References</a>
       </h2>
 <dl class="references">
+<dt id="RFC8179">[RFC8179]</dt>
+      <dd>
+<span class="refAuthor">Bradner, S.</span> and <span class="refAuthor">J. Contreras</span>, <span class="refTitle">"Intellectual Property Rights in IETF Technology"</span>, <span class="seriesInfo">BCP 79</span>, <span class="seriesInfo">RFC 8179</span>, <span class="seriesInfo">DOI 10.17487/RFC8179</span>, <time datetime="2017-05" class="refDate">May 2017</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/html/rfc8179">https://datatracker.ietf.org/doc/html/rfc8179</a>&gt;</span>. </dd>
+<dd class="break"></dd>
 <dt id="RFC8719">[RFC8719]</dt>
     <dd>
 <span class="refAuthor">Krishnan, S.</span>, <span class="refTitle">"High-Level Guidance for the Meeting Policy of the IETF"</span>, <span class="seriesInfo">BCP 226</span>, <span class="seriesInfo">RFC 8719</span>, <span class="seriesInfo">DOI 10.17487/RFC8719</span>, <time datetime="2020-02" class="refDate">February 2020</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/html/rfc8719">https://datatracker.ietf.org/doc/html/rfc8719</a>&gt;</span>. </dd>
