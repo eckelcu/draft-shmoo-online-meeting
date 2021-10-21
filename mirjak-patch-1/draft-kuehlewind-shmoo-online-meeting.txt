@@ -245,9 +245,9 @@ Table of Contents
 
    As more parallel sessions usually also mean more conflicts, chairs
    are encouraged to request plenary meeting time carefully but also
-   based realistic planning to avoid running over time.  Use of interim
-   meetings should be consider instead where possible and sensible, as
-   discussed in Section Section 4.1.
+   based on realistic planning to avoid running over time.  Use of
+   interim meetings should be consider instead where possible and
+   sensible, as discussed in Section Section 4.1.
 
 4.  Additiona Considerations and Recommendations
 
