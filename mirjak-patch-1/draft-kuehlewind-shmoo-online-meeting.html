@@ -1222,7 +1222,7 @@ location, but starting roughly around noon instead. Some flexibility with the st
 noon has been used to mitigate the worse
 possible time slots, even though, given the distribution of participants it is not possible to
 avoid certain hours entirely. The in-person meeting location follows the 1-1-1 rule as documented in <span>[<a href="#RFC8719" class="xref">RFC8719</a>]</span>
-to rotate between Asia, Europe, and North America. While the exact time slot used had let to various discussions,
+to rotate between Asia, Europe,  and North America. While the exact time slot used had led to various discussions,
 following roughly the 1-1-1 rule to share the pain has/seems to have rough consensus.<a href="#section-2-4" class="pilcrow">¶</a></p>
 </section>
 </div>
@@ -1236,35 +1236,113 @@ following roughly the 1-1-1 rule to share the pain has/seems to have rough conse
         <h3 id="name-time-zone-selection">
 <a href="#section-3.1" class="section-number selfRef">3.1. </a><a href="#name-time-zone-selection" class="section-name selfRef">Time Zone Selection</a>
         </h3>
-<p id="section-3.1-1">All fully online IETF plenary meetings begin at 0500 ("Asia"), 1200 ("Europe"), or 2100 ("North America") UTC. The names
-are not meant to imply that all participants in a given region will find the times convenient given their personal
-schedules, but are useful for the selection rules below. These location names are consistent with the venue
-selection criteria in <span>[<a href="#RFC8719" class="xref">RFC8719</a>]</span>.<a href="#section-3.1-1" class="pilcrow">¶</a></p>
-<p id="section-3.1-2">The selected slots have been proposed to minimize inconvenience while not excessively penalizing any time zone.
-Effectively, there is an early morning and a late afternoon meeting for two of the three regions in
-each slot. E.g. the "Asia" 0500 UTC slot would be 0600 CET (early morning) and 1300 China Standard Time (afternoon). Since fully
-online meeting days are expected to be shorter then in-person meetings, this slot is roughly within the "usual" working hours
-of both regions.<a href="#section-3.1-2" class="pilcrow">¶</a></p>
-<p id="section-3.1-3">The intent of rotating between these three slots is to scatter meetings throughout the course of the global day, to maximize the ease
-of participants to occasionally attend regardless of their location and what time of day is optimal for their schedule.<a href="#section-3.1-3" class="pilcrow">¶</a></p>
+<p id="section-3.1-1">This time selection enables to have 2 out of 3 fully online IETF plenary meetings 
+during the day from most participants. Basically every full online meeting is for two regions 
+of the three regions described in <span>[<a href="#RFC8179" class="xref">RFC8179</a>]</span>, roughly speaking, after sunrise or after dinner.
+This has the tradeoff that it maps the third region in middle of night. However, that also means
+for most participants only one remote meeting per year might
+require a significant change to sleep schedules.<a href="#section-3.1-1" class="pilcrow">¶</a></p>
+<p id="section-3.1-2">The times are also seasonally adjusted to leverage differentials in Daylight
+Savings Time. These time slots are as follows, in UTC:<a href="#section-3.1-2" class="pilcrow">¶</a></p>
+<table class="center" id="table-1">
+          <caption><a href="#table-1" class="selfRef">Table 1</a></caption>
+<thead>
+            <tr>
+              <th class="text-left" rowspan="1" colspan="1">Name</th>
+              <th class="text-left" rowspan="1" colspan="1">Times (Northern Summer)</th>
+              <th class="text-left" rowspan="1" colspan="1">Times (Northern Winter)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-left" rowspan="1" colspan="1">North America Night</td>
+              <td class="text-left" rowspan="1" colspan="1">0500-1100 UTC</td>
+              <td class="text-left" rowspan="1" colspan="1">0600-1200 UTC</td>
+            </tr>
+            <tr>
+              <td class="text-left" rowspan="1" colspan="1">Asia Night</td>
+              <td class="text-left" rowspan="1" colspan="1">1400-2000 UTC</td>
+              <td class="text-left" rowspan="1" colspan="1">1500-2100 UTC</td>
+            </tr>
+            <tr>
+              <td class="text-left" rowspan="1" colspan="1">Europe Night</td>
+              <td class="text-left" rowspan="1" colspan="1">2200-0400 UTC</td>
+              <td class="text-left" rowspan="1" colspan="1">2200-0400 UTC</td>
+            </tr>
+          </tbody>
+        </table>
+<p id="section-3.1-4">The intent of rotating between these three slots is to scatter meetings
+throughout the course of the global day, to maximize the ease of participants
+to occasionally attend regardless of their location and what time of day is
+optimal for their schedule.<a href="#section-3.1-4" class="pilcrow">¶</a></p>
 <div id="rules-for-selection">
 <section id="section-3.1.1">
           <h4 id="name-rules-for-selection">
 <a href="#section-3.1.1" class="section-number selfRef">3.1.1. </a><a href="#name-rules-for-selection" class="section-name selfRef">Rules for selection</a>
           </h4>
-<p id="section-3.1.1-1">The IETF will select a start time from these three choices according the following rules, applied in order.<a href="#section-3.1.1-1" class="pilcrow">¶</a></p>
-<ol start="1" type="1" class="normal type-1" id="section-3.1.1-2">
-<li id="section-3.1.1-2.1">Eliminate all regions that had an in-person meeting in that calendar year. If one region remains, select the time
-slot mapped to that region.<a href="#section-3.1.1-2.1" class="pilcrow">¶</a>
-</li>
-            <li id="section-3.1.1-2.2">Eliminate all regions that have a planned in-person meeting that calendar year. If one region remains, select the
-time slot mapped to that region.<a href="#section-3.1.1-2.2" class="pilcrow">¶</a>
-</li>
-            <li id="section-3.1.1-2.3">Select the region that has least recently had an fully online IETF plenary in its slot. For the pandemic cancellations
-of 2020- 2021, the original host cities are used to determine the host region. Therefore, at the time of writing the
-most recent selections are Asia in November 2020, Europe in March 2021, and North America in July 2021.<a href="#section-3.1.1-2.3" class="pilcrow">¶</a>
-</li>
-          </ol>
+<p id="section-3.1.1-1">The IETF will select a start time from these three choices based on the past
+three meetings. The following table covers all permutations of previous
+meetings held in-person in Region A, B, or C; or remotely in the nights of
+one of those regions.<a href="#section-3.1.1-1" class="pilcrow">¶</a></p>
+<table class="center" id="table-2">
+            <caption><a href="#table-2" class="selfRef">Table 2</a></caption>
+<thead>
+              <tr>
+                <th class="text-left" rowspan="1" colspan="1">3 meetings ago</th>
+                <th class="text-left" rowspan="1" colspan="1">2 meetings ago</th>
+                <th class="text-left" rowspan="1" colspan="1">Last Meeting</th>
+                <th class="text-left" rowspan="1" colspan="1">Online Selection</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-left" rowspan="1" colspan="1">Any</td>
+                <td class="text-left" rowspan="1" colspan="1">Any</td>
+                <td class="text-left" rowspan="1" colspan="1">In-Person A</td>
+                <td class="text-left" rowspan="1" colspan="1">A Night</td>
+              </tr>
+              <tr>
+                <td class="text-left" rowspan="1" colspan="1">Any</td>
+                <td class="text-left" rowspan="1" colspan="1">Online A Night</td>
+                <td class="text-left" rowspan="1" colspan="1">Online B Night</td>
+                <td class="text-left" rowspan="1" colspan="1">C Night</td>
+              </tr>
+              <tr>
+                <td class="text-left" rowspan="1" colspan="1">Online A Night</td>
+                <td class="text-left" rowspan="1" colspan="1">In-Person B</td>
+                <td class="text-left" rowspan="1" colspan="1">Online B Night</td>
+                <td class="text-left" rowspan="1" colspan="1">C Night</td>
+              </tr>
+              <tr>
+                <td class="text-left" rowspan="1" colspan="1">In-Person A</td>
+                <td class="text-left" rowspan="1" colspan="1">In-Person B</td>
+                <td class="text-left" rowspan="1" colspan="1">Online B Night</td>
+                <td class="text-left" rowspan="1" colspan="1">A Night</td>
+              </tr>
+              <tr>
+                <td class="text-left" rowspan="1" colspan="1">In-Person A</td>
+                <td class="text-left" rowspan="1" colspan="1">In-Person A</td>
+                <td class="text-left" rowspan="1" colspan="1">Online A Night</td>
+                <td class="text-left" rowspan="1" colspan="1">see below</td>
+              </tr>
+              <tr>
+                <td class="text-left" rowspan="1" colspan="1">Online A Night</td>
+                <td class="text-left" rowspan="1" colspan="1">Online B Night</td>
+                <td class="text-left" rowspan="1" colspan="1">Online C Night</td>
+                <td class="text-left" rowspan="1" colspan="1">A Night</td>
+              </tr>
+            </tbody>
+          </table>
+<p id="section-3.1.1-3">Basically this table follows two rules:
+1) When ever a fully online meeting follows and in-person meeting, the online meeting time is used that disadvantages most the participants of the time zone where the in-person meeting was held.
+2) If multiple fully online meetings follow each other, the time zone selection should be rotated based on the most recent time zones that the in-person meetings were held in.<a href="#section-3.1.1-3" class="pilcrow">¶</a></p>
+<p id="section-3.1.1-4">The final case occurs in the rare event that back-to-back in-person plenaries
+occur in the same region. In this case, find the most recent meeting that was
+neither in 'A' (if in person) nor in 'A' night (if remote). If this meeting
+was in-person in region 'B', then the next meeting will be in 'B' Night. If it
+was remote in 'B' Night, the next meeting will be in 'C' Night.<a href="#section-3.1.1-4" class="pilcrow">¶</a></p>
+<p id="section-3.1.1-5">To initialize this algorithm, IETF 112 is considered as an 'Asia Night'
+remote meeting, and IETF 111 is a 'Europe Night' remote meeting.<a href="#section-3.1.1-5" class="pilcrow">¶</a></p>
 </section>
 </div>
 </section>
@@ -1389,7 +1467,7 @@ broader participation than in-person meetings where participation is often fluct
 <p id="section-4.3-2">However, it has also been recognised that the online meeting does not provide an equivalent opportunity to socialize.
 The observed slight decrease in submission of new (-00) drafts, while the overall number of draft submission and
 productivity seem to stay stable, might also be an indication of the dismiss of these interactions. The increase in interim
-meetings potentially compensates for these missing interactions for continuous work (or may even increases 
+meetings potentially compensates for these missing interactions for continuous work (or may even increase
 productivity there), but seems to be less adequate to spark new ideas.<a href="#section-4.3-2" class="pilcrow">¶</a></p>
 <p id="section-4.3-3">None of the data observed so far can, however, be interpreted as showing a significant trend. However, these factors
 should be consider for the organization of future online-only meetings in replacement or addition to in-person meetings.<a href="#section-4.3-3" class="pilcrow">¶</a></p>
@@ -1424,6 +1502,10 @@ such experiment in advance, so people adjust to changes and potentially provide 
 <a href="#section-6.1" class="section-number selfRef">6.1. </a><a href="#name-normative-references" class="section-name selfRef">Normative References</a>
         </h3>
 <dl class="references">
+<dt id="RFC8179">[RFC8179]</dt>
+        <dd>
+<span class="refAuthor">Bradner, S.</span> and <span class="refAuthor">J. Contreras</span>, <span class="refTitle">"Intellectual Property Rights in IETF Technology"</span>, <span class="seriesInfo">BCP 79</span>, <span class="seriesInfo">RFC 8179</span>, <span class="seriesInfo">DOI 10.17487/RFC8179</span>, <time datetime="2017-05" class="refDate">May 2017</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/html/rfc8179">https://datatracker.ietf.org/doc/html/rfc8179</a>&gt;</span>. </dd>
+<dd class="break"></dd>
 <dt id="RFC8719">[RFC8719]</dt>
       <dd>
 <span class="refAuthor">Krishnan, S.</span>, <span class="refTitle">"High-Level Guidance for the Meeting Policy of the IETF"</span>, <span class="seriesInfo">BCP 226</span>, <span class="seriesInfo">RFC 8719</span>, <span class="seriesInfo">DOI 10.17487/RFC8719</span>, <time datetime="2020-02" class="refDate">February 2020</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/html/rfc8719">https://datatracker.ietf.org/doc/html/rfc8719</a>&gt;</span>. </dd>
