@@ -5,8 +5,8 @@
 Network Working Group                                      M. Kuehlewind
 Internet-Draft                                                  Ericsson
 Intended status: Informational                                   M. Duke
-Expires: 24 April 2022                                 F5 Networks, Inc.
-                                                         21 October 2021
+Expires: 25 April 2022                                 F5 Networks, Inc.
+                                                         22 October 2021
 
 
         Guidelines for the Organization of Fully Online Meetings
@@ -45,7 +45,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 24 April 2022.
+   This Internet-Draft will expire on 25 April 2022.
 
 Copyright Notice
 
@@ -71,7 +71,7 @@ Table of Contents
      3.2.  Number of Days and Total Hours per Day
      3.3.  Session/Break Length
      3.4.  Number of Parallel Tracks
-   4.  Additiona Considerations and Recommendations
+   4.  Additional Considerations and Recommendations
      4.1.  Full vs. limited agenda (and interim meetings)
      4.2.  Flexibility of time usage
      4.3.  Chances for inclusivity and Lessons Learnt on socilizing
@@ -288,7 +288,7 @@ Table of Contents
    interim meetings should be consider instead where possible and
    sensible, as discussed in Section Section 4.1.
 
-4.  Additiona Considerations and Recommendations
+4.  Additional Considerations and Recommendations
 
 4.1.  Full vs. limited agenda (and interim meetings)
 
