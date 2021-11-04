@@ -5,8 +5,8 @@
 Network Working Group                                      M. Kuehlewind
 Internet-Draft                                                  Ericsson
 Intended status: Informational                                   M. Duke
-Expires: 25 April 2022                                 F5 Networks, Inc.
-                                                         22 October 2021
+Expires: 8 May 2022                                    F5 Networks, Inc.
+                                                         4 November 2021
 
 
         Guidelines for the Organization of Fully Online Meetings
@@ -45,7 +45,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 25 April 2022.
+   This Internet-Draft will expire on 8 May 2022.
 
 Copyright Notice
 
@@ -57,9 +57,9 @@ Copyright Notice
    license-info) in effect on the date of publication of this document.
    Please review these documents carefully, as they describe your rights
    and restrictions with respect to this document.  Code Components
-   extracted from this document must include Simplified BSD License text
-   as described in Section 4.e of the Trust Legal Provisions and are
-   provided without warranty as described in the Simplified BSD License.
+   extracted from this document must include Revised BSD License text as
+   described in Section 4.e of the Trust Legal Provisions and are
+   provided without warranty as described in the Revised BSD License.
 
 Table of Contents
 
@@ -158,7 +158,7 @@ Table of Contents
    | North America | 0500-1100 UTC           | 0600-1200 UTC           |
    | Night         |                         |                         |
    +---------------+-------------------------+-------------------------+
-   | Asia Night    | 1400-2000 UTC           | 1500-2100 UTC           |
+   | Asia Night    | 1300-1900 UTC           | 1400-2000 UTC           |
    +---------------+-------------------------+-------------------------+
    | Europe Night  | 2200-0400 UTC           | 2200-0400 UTC           |
    +---------------+-------------------------+-------------------------+
@@ -395,12 +395,11 @@ Table of Contents
    [RFC8179]  Bradner, S. and J. Contreras, "Intellectual Property
               Rights in IETF Technology", BCP 79, RFC 8179,
               DOI 10.17487/RFC8179, May 2017,
-              <https://datatracker.ietf.org/doc/html/rfc8179>.
+              <https://www.rfc-editor.org/rfc/rfc8179>.
 
    [RFC8719]  Krishnan, S., "High-Level Guidance for the Meeting Policy
               of the IETF", BCP 226, RFC 8719, DOI 10.17487/RFC8719,
-              February 2020,
-              <https://datatracker.ietf.org/doc/html/rfc8719>.
+              February 2020, <https://www.rfc-editor.org/rfc/rfc8719>.
 
 6.2.  Informative References
 
